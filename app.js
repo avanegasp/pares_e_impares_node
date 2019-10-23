@@ -4,10 +4,10 @@ const app = express();
 app.get('/', (req, res) => {
   let result = "";
   for (var i = 1; i <= 50; i++) {
-    if (i % 2) {
-    result += "<p>" + i + " Soy par!" + "</p>"
+    if (i % 2 == 0) {
+      result += "<p>" + i + " Soy Par!" + "</p>"
     }else{
-    result += "<p>" + i + " Soy impar!" + "</p>"
+      result += "<p>" + i + " Soy Impar!" + "</p>"
     }
   }
   res.send(result)
