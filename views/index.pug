@@ -1,0 +1,12 @@
+html
+ head
+  title="Mi primera plantilla Pug JS"
+  body
+    -let result = ""
+
+    -for (var i = 1; i <= 50; i++)
+      -if (i % 2 == 0)
+        p #{i} Soy Par!
+      -else
+        p #{i} Soy Impar!
+      -result
